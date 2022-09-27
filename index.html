@@ -4,7 +4,7 @@
             https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
     MIME    https://www.htmlquick.com/reference/mime-types.html
     CSS     https://www.w3schools.com/css/css_syntax.asp
-            https://css-tricks.com/introduction-fr-css-unit/
+    JS      https://www.w3schools.com/howto/howto_css_modals.asp
 -->
 <html lang="en">
     <head>
@@ -14,6 +14,7 @@
         <link href="https://use.typekit.net/tta2rnf.css" rel="stylesheet" type="text/css">
         <link href="assets/styles.css" rel="stylesheet" type="text/css">
         <link href="assets/img/Logo.svg" rel="icon" type="image/svg+xml">
+        <script src="assets/script.js"></script>
     </head>
 
     <body>
@@ -40,7 +41,16 @@
                 <h3>Projects</h3>
                 <div id="gallery">
                     <div id="busShelter">
-                        <img class="main_img" title="Bus Shelter" src="assets/img/Bus Shelter 2018/model2.JPG" alt="Bus Shelter Project">
+                        <img class="main_img" title="Bus Shelter" src="assets/img/Bus Shelter 2018/model2.JPG" alt="Bus Shelter Project" id="img">
+
+                        <div class="modal" id="modal">
+                            <div>
+                                <span class="closeModal">&times;</span>
+                                <h4>Bus Shelter</h4>
+                                <h5>2018</h5>
+                                <p>A bus shelter designed for the Marist College Canberra grounds. Aside from providing shelter, the design would also function as a greywater collection system for watering the grounds.</p>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="exposedToTheElements">
