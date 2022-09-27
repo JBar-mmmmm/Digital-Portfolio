@@ -9,7 +9,7 @@ body {
 }
 
 
-/* Header */
+/* Header & initial H styles */
 header {
     padding: 50px var(--horrizontalOffset)
 }
@@ -17,10 +17,11 @@ header {
 #logo img {
     float: left;
     max-height: calc(80px + 50px + 5px);
-    padding-right: 60px;
+    padding-right: 40px;
 }
 h1, 
-h2 {
+h2,
+h3 {
     font-family: bc-alphapipe, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -35,10 +36,24 @@ h2 {
 
 
 /* Body Text */
-
+#bodyText p {
+    font-family: sofia-pro-condensed, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.3;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+}
 
 
 /* Gallery */
+h3 {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
 #gallery {
     display: grid;
     /* --gridGap: 10px;
