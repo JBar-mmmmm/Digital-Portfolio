@@ -1,5 +1,5 @@
 .wrapper {
-    width: 80%;
+    width: 65%;
     padding: 0 10px 0 10px;
     margin: 0 auto;
 }
@@ -9,13 +9,12 @@
     /* Typeface */
 h1, 
 h2,
-h3,
-h4 {
+h3 {
     font-family: bc-alphapipe, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-h5 {
+h4 {
     font-family: bc-alphapipe, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -34,6 +33,9 @@ h2 {
 }
 h3 {
     font-size: 1.7vw;
+}
+h4 {
+    font-size: 1.4vw;
 }
 p {
     font-size: 1.4vw;
@@ -66,7 +68,7 @@ header h2 {
 
 
 /* Gallery */
-h3 {
+#galleryHeading {
     padding-left: 10px;
     padding-bottom: 0.1vw;
 }
@@ -77,14 +79,14 @@ h3 {
     gap: 10px;
     padding: 10px;  
 }
-#gallery div img {
+.main_img {
     max-width: 100%;
     max-height: 100%;
 }
 
 
 /* Modals */
-.modal {
+.modal { /* If modal overflows down, the browser adds a second scrollbar which breaks the width alignment of the modal to the page behind */
     display: none;
     position: fixed;
     z-index: 1;
@@ -97,9 +99,9 @@ h3 {
     background-color: transparent; /* fallback */
     background-color: rgba(0, 0, 0, 0.5);
 }
-.modal div {
+.modalContent {
     background-color: #999;
-    width: calc(65% - 20px);
+    width: calc(55% - 20px);
     padding: 5%;
     margin: 5% auto;
 }
@@ -109,4 +111,25 @@ h3 {
     font-weight: 400;
     font-style: normal;
     font-size: 5vw;
+}
+.modalContent h3 {
+    padding-bottom: 0.1vw;
+}
+.modalContent h4 {
+    padding-bottom: 0.5vw;
+}
+.modalColumn img {
+    /* width: 100%; */
+    max-height: 300px;
+}
+
+/* based on https://www.w3schools.com/howto/howto_css_two_columns.asp */
+.modalColumn {
+    float: left;
+    width: 50%;
+}
+.modalContent:after {
+    content: "";
+    display: table;
+    clear: both;
 }

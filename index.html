@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <!--References
-    HTML    https://www.w3schools.com/tags
-            https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
     MIME    https://www.htmlquick.com/reference/mime-types.html
-    CSS     https://www.w3schools.com/css/css_syntax.asp
-    JS      https://www.w3schools.com/howto/howto_css_modals.asp
+
+        Code
+        CSS     https://www.w3schools.com/howto/howto_css_two_columns.asp
+        JS      https://www.w3schools.com/howto/howto_css_modals.asp
 -->
 <html lang="en">
     <head>
@@ -38,17 +38,22 @@
                     <p>I am an Industrial Design student studying at the University of Canberra completing my degree with a breadth major in Interaction Design in the first half of 2023. I am interested in elegant designs and designing for everyone and am inspired by new technology and technology from modern history as well as biomimicry and organic design. I am excited to begin applying myself in the design industry.</p>
                 </div>
 
-                <h3>Projects</h3>
+                <h3 id="galleryHeading">Projects</h3>
                 <div id="gallery">
                     <div id="busShelter">
-                        <img class="main_img" title="Bus Shelter" src="assets/img/Bus Shelter 2018/model2.JPG" alt="Bus Shelter Project" id="busShelterOpenModal">
+                        <img class="main_img" title="Bus Shelter" src="assets/img/Bus Shelter 2018/model2.JPG" alt="Bus Shelter project model side shot" id="busShelterOpenModal">
 
                         <div class="modal" id="busShelterModal">
-                            <div class="modalText">
-                                <span class="closeModal" id="busShelterCloseModal">&times;</span>
-                                <h4>Bus Shelter</h4>
-                                <h5>2018</h5>
-                                <p>A bus shelter designed for the Marist College Canberra grounds. Aside from providing shelter, the design would also function as a greywater collection system for watering the grounds.</p>
+                            <div class="modalContent">
+                                <div class="modalColumn">
+                                    <span class="closeModal" id="busShelterCloseModal">&times;</span>
+                                    <h3>Bus Shelter</h3>
+                                    <h4>2018</h4>
+                                    <p>A bus shelter designed for the Marist College Canberra grounds. Aside from providing shelter, the design would also function as a greywater collection system for watering the grounds.</p>
+                                </div>
+                                <div class="modalColumn">
+                                    <img title="Bus Shelter low angle" src="assets/img/Bus Shelter 2018/model1.JPG" alt="Bus Shelter project model low angle shot">
+                                </div>
                             </div>
                         </div>
                     </div>
