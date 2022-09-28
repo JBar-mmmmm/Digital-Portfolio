@@ -1,22 +1,15 @@
 // Modals
-// var busShelter = document.getElementById("busShelter");
-// var busShelterModal = busShelter.getElementByClassName("modal");
-// var busShelterModalOpen = busShelter.getElementsByTagName("img");
-// var busShelterModalClose = busShelterModal.getElementByClassName("closeModal");
-// busShelterModalOpen.onclick = function() {
-//     busShelterModal.style.display = "block";
-// }
-// busShelterModalClose.onclick = function() {
-//     busShelterModal.style.display = "none";
-// }
-// window.onclick = function(event) {
-//     if (event.target == busShelterModal) {
-//         busShelterModal.style.display = "none";
-//     }
-// }
+// based on https://www.w3schools.com/howto/howto_css_modals.asp
 
-var modal = document.getElementById("modal");
-var openModal = document.getElementById("img");
-openModal.onclick = function() {
-    modal.style.display = "block";
+document.getElementById("busShelterOpenModal").onclick = function() {
+    document.getElementById("busShelterModal").style.display = "block";
 }
+document.getElementById("busShelterCloseModal").onclick = function() {
+    document.getElementById("busShelterModal").style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == document.getElementById("busShelterModal")) {
+        document.getElementById("busShelterModal").style.display = "none";
+    }
+}
+
