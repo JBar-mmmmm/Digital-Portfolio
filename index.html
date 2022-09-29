@@ -4,7 +4,9 @@
 
         Code
         CSS     https://www.w3schools.com/howto/howto_css_two_columns.asp
+                https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp
         JS      https://www.w3schools.com/howto/howto_css_modals.asp
+                https://jsfiddle.net/0x0049/koodkcng/1/
 -->
 <html lang="en">
     <head>
@@ -41,16 +43,25 @@
                 <h3 id="galleryHeading">Projects</h3>
                 <div id="gallery">
                     <div id="busShelter">
-                        <img class="main_img" title="Bus Shelter" src="assets/img/Bus Shelter 2018/model2.JPG" alt="Bus Shelter project model side shot" id="busShelterOpenModal">
+                        <div class="galleryItem">
+                            <img class="main_img" title="Bus Shelter" src="assets/img/Bus Shelter 2018/model2.JPG" alt="Bus Shelter project model side shot" id="busShelterOpenModal">
+                            <div class="overlay">
+                                <h3>Bus Shelter</h3>
+                            </div>
+                        </div>
 
                         <div class="modal" id="busShelterModal">
                             <div class="modalContent">
-                                <div class="modalColumn">
+                                <div>
                                     <span class="closeModal" id="busShelterCloseModal">&times;</span>
+                                </div>
+                                    
+                                <div class="modalColumn">
                                     <h3>Bus Shelter</h3>
                                     <h4>2018</h4>
                                     <p>A bus shelter designed for the Marist College Canberra grounds. Aside from providing shelter, the design would also function as a greywater collection system for watering the grounds.</p>
                                 </div>
+
                                 <div class="modalColumn">
                                     <img title="Bus Shelter low angle" src="assets/img/Bus Shelter 2018/model1.JPG" alt="Bus Shelter project model low angle shot">
                                 </div>
@@ -59,51 +70,324 @@
                     </div>
 
                     <div id="exposedToTheElements">
-                        <img class="main_img" title="Exposed to the Elements" src="assets/img/Exposed to the Elements 2022/u3216775_Jack_Barker_Image1.jpg" alt="Exposed to the Elements Project">
+                        <div class="galleryItem">
+                            <img class="main_img" title="Exposed to the Elements" src="assets/img/Exposed to the Elements 2022/u3216775_Jack_Barker_Image1.jpg" alt="Exposed to the Elements model" id="exposedToTheElementsOpenModal">
+                            <div class="overlay">
+                                <h3>Exposed to the Elements</h3>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="exposedToTheElementsModal">
+                            <div class="modalContent">
+                                <div>
+                                    <span class="closeModal" id="exposedToTheElementsCloseModal">&times;</span>
+                                </div>
+                                    
+                                <div class="modalColumn">
+                                    <h3>Exposed to the Elements</h3>
+                                    <h4>2022</h4>
+                                    <p>A metal birdfeeder focused on working with dissimilar metals. This sculptural design is made of approximately one-third copper, aluminium, and stainless steel.</p>
+                                </div>
+
+                                <div class="modalColumn">
+                                    <img title="Exposed to the Elements model" src="assets/img/Exposed to the Elements 2022/u3216775_Jack_Barker_Image2.jpg" alt="Exposed to the Elements model high side angle">
+                                </div>
+                                <div class="modalColumn">
+                                    <img title="Exposed to the Elements drawing" src="assets/img/Exposed to the Elements 2022/Side View.png" alt="Exposed to the Elements side view drawing">
+                                </div>
+                                <div class="modalColumn">
+                                    <img title="Exposed to the Elements drawing" src="assets/img/Exposed to the Elements 2022/Section.png" alt="Exposed to the Elements section side view drawing">
+                                </div>
+                                <div class="modalColumn">
+                                    <img title="Exposed to the Elements drawing" src="assets/img/Exposed to the Elements 2022/Top View.png" alt="Exposed to the Elements top view drawing">
+                                </div>
+                                <div class="modalColumn">
+                                    <img title="Exposed to the Elements drawing" src="assets/img/Exposed to the Elements 2022/Perspective.png" alt="Exposed to the Elements perspective drawing">
+                                </div>
+                                <div class="modalColumn">
+                                    <img title="Exposed to the Elements model" src="assets/img/Exposed to the Elements 2022/u3216775_Jack_Barker_Image3.jpg" alt="Exposed to the Elements model side view">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="speaker">
-                        <img class="main_img" title="HP Omen Speaker" src="assets/img/Speaker 2020 - HP Omen/Speaker1X_Front.png" alt="HP Omen Speaker Project">
+                        <div class="galleryItem">
+                            <img class="main_img" title="HP Omen Speaker" src="assets/img/Speaker 2020 - HP Omen/Speaker1X_Front.png" alt="HP Omen Speaker single module render" id="speakerOpenModal">
+                            <div class="overlay">
+                                <h3>Speaker - HP Omen</h3>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="speakerModal">
+                            <div class="modalContent">
+                                <div>
+                                    <span class="closeModal" id="speakerCloseModal">&times;</span>
+                                </div>
+                                    
+                                <div class="modalColumn">
+                                    <h3>Speaker - HP Omen</h3>
+                                    <h4>2020</h4>
+                                    <p>A concept for a HP Omen modular speaker design. The design is Bluetooth-compatible with two speaker drivers and a passive radiator.</p>
+                                </div>
+
+                                <div class="modalColumn">
+                                    <img title="Speaker render" src="assets/img/Speaker 2020 - HP Omen/Speakers2B_5X.png" alt="Speaker render modules in 2 & 5 unit configurations">
+                                </div>
+                                <div class="modalColumn">
+                                    <img title="Speaker render" src="assets/img/Speaker 2020 - HP Omen/Speakers1B_2B_5X.png" alt="Speaker render modules in 1, 2, & 5 unit configurations">
+                                </div>
+                                <div class="modalColumn">
+                                    <img title="Speaker render" src="assets/img/Speaker 2020 - HP Omen/Speaker1X_Back.png" alt="Speaker render module back view">
+                                </div>
+                                <div class="modalColumn">
+                                    <img title="Speaker render" src="assets/img/Speaker 2020 - HP Omen/SpeakerEX.png" alt="Speaker render module exploded view">
+                                </div>
+                                <div class="modalColumn">
+                                    <video>
+                                        
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="bodilyAdornment">
-                        <img class="main_img" title="Bodily Adornment" src="assets/img/Bodily Adornment 2020 - Disaster/final1.jpg" alt="Bodily Adornment Project">
+                        <div class="galleryItem">
+                            <img class="main_img" title="Bodily Adornment" src="assets/img/Bodily Adornment 2020 - Disaster/final1.jpg" alt="Bodily Adornment mask model front view" id="bodilyAdornmentOpenModal">
+                            <div class="overlay">
+                                <h3>Mask</h3>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="bodilyAdornmentModal">
+                            <div class="modalContent">
+                                <div>
+                                    <span class="closeModal" id="bodilyAdornmentCloseModal">&times;</span>
+                                </div>
+                                    
+                                <div class="modalColumn">
+                                    <h3>Bodily Adornment - Disaster</h3>
+                                    <h4>2020</h4>
+                                    <p>A decorative mask designed around the theme of disaster. Inspired by Tom Dixon’s work and the state of the world at the time.</p>
+                                </div>
+
+                                <div class="modalColumn">
+                                    <img title="Bus Shelter low angle" src="assets/img/Bus Shelter 2018/model1.JPG" alt="Bus Shelter project model low angle shot">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="a7Xtended">
-                        <img class="main_img" title="Audi A7 Xtended" src="assets/img/A7 Xtended 2022 - Group Project/main.jpg" alt="Audi A7 Xtended Group Project">
+                        <div class="galleryItem">
+                            <img class="main_img" title="Audi A7 Xtended" src="assets/img/A7 Xtended 2022 - Group Project/main.jpg" alt="Audi A7 Xtended console model in the car" id="a7XtendedOpenModal">
+                            <div class="overlay">
+                                <h3>A7 Xtended</h3>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="a7XtendedModal">
+                            <div class="modalContent">
+                                <div>
+                                    <span class="closeModal" id="a7XtendedCloseModal">&times;</span>
+                                </div>
+                                    
+                                <div class="modalColumn">
+                                    <h3>A7 Xtended (Group Project)</h3>
+                                    <h4>2022</h4>
+                                    <p>Designed in collaboration with Audi Canberra, A7 Xtended sought to augment the Audi A7 given to the University of Canberra to create new experiences, functionality, and utility for future and current users. Over the course of the unit our studio team designed and built a middle seat console to elevate the experience of the corporate car by likening the experience to that of air travel and a front window blind media system for transforming the car when not in motion to an office on the go. We exhibited our work along with the A7 after the semester. My core role in the team was design engineering and prototyping. I was one of the members responsible for realising the console prototype.</p>
+                                </div>
+
+                                <div class="modalColumn">
+                                    <img title="Bus Shelter low angle" src="assets/img/Bus Shelter 2018/model1.JPG" alt="Bus Shelter project model low angle shot">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="catapult">
-                        <img class="main_img" title="Catapult" src="assets/img/Catapult 2022/main.jpg" alt="Catapult Project">
+                        <div class="galleryItem">
+                            <img class="main_img" title="Catapult" src="assets/img/Catapult 2022/main.jpg" alt="Catapult model high angle shot with tennis ball" id="catapultOpenModal">
+                            <div class="overlay">
+                                <h3>Catapult</h3>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="catapultModal">
+                            <div class="modalContent">
+                                <div>
+                                    <span class="closeModal" id="catapultCloseModal">&times;</span>
+                                </div>
+                                    
+                                <div class="modalColumn">
+                                    <h3>Catapult</h3>
+                                    <h4>2022</h4>
+                                    <p>A carbon fibre catapult design focused on working with composite materials. The design took inspiration from the reflex bow in order to hurl a tennis ball as far as possible while being lightweight.</p>
+                                </div>
+
+                                <div class="modalColumn">
+                                    <img title="Bus Shelter low angle" src="assets/img/Bus Shelter 2018/model1.JPG" alt="Bus Shelter project model low angle shot">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="eCargoScooter">
-                        <img class="main_img" title="Electric Cargo Scooter" src="assets/img/E. Cargo Scooter 2021 - Cargo Crusier/main.png" alt="Electric Cargo Scooter Project">
+                        <div class="galleryItem">
+                            <img class="main_img" title="Electric Cargo Scooter" src="assets/img/E. Cargo Scooter 2021 - Cargo Crusier/main.png" alt="Electric Cargo Scooter hand rendered perspective" id="eCargoScooterOpenModal">
+                            <div class="overlay">
+                                <h3>E. Cargo Scooter</h3>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="eCargoScooterModal">
+                            <div class="modalContent">
+                                <div>
+                                    <span class="closeModal" id="eCargoScooterCloseModal">&times;</span>
+                                </div>
+                                    
+                                <div class="modalColumn">
+                                    <h3><span class="longTitle">E. Cargo Scooter&nbsp;</span><span class="longTitle">- Cargo Cruiser</span></h3>
+                                    <h4>2021</h4>
+                                    <p>A general-purpose electric cargo scooter suited to the urban environment. The Cargo Cruiser features a hooked-on elastic mesh for storing all manner of large objects, with an easy access cargo door above the compartment, and a small item cargo compartment above the rear wheel.</p>
+                                </div>
+
+                                <div class="modalColumn">
+                                    <img title="Bus Shelter low angle" src="assets/img/Bus Shelter 2018/model1.JPG" alt="Bus Shelter project model low angle shot">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="kitchenTimer">
-                        <img class="main_img" title="Kitchen Timer &quot;Stadiakos Chronos&quot;" src="assets/img/Kitchen Timer 2021 - Stadiakos Chronos/main.jpg" alt="Kitchen Timer &quot;Stadiakos Chronos&quot; Project">
+                        <div class="galleryItem">
+                            <img class="main_img" title="Kitchen Timer &quot;Stadiakos Chronos&quot;" src="assets/img/Kitchen Timer 2021 - Stadiakos Chronos/main.jpg" alt="Kitchen Timer &quot;Stadiakos Chronos&quot; model side view" id="kitchenTimerOpenModal">
+                            <div class="overlay">
+                                <h3>Kitchen Timer</h3>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="kitchenTimerModal">
+                            <div class="modalContent">
+                                <div>
+                                    <span class="closeModal" id="kitchenTimerCloseModal">&times;</span>
+                                </div>
+                                    
+                                <div class="modalColumn">
+                                    <h3><span class="longTitle">Kitchen Timer&nbsp;</span><span class="longTitle">- Stadiakos Chronos</span></h3>
+                                    <h4>2021</h4>
+                                    <p>An awe-inspiring tabletop kitchen timer designed to last 100 years. This design aims to forge a greater connection with a person, inspiring awe and wonder to increase the product's longevity. Each glass chamber has different hole diameters allowing for three set rates of liquid exchange.</p>
+                                </div>
+
+                                <div class="modalColumn">
+                                    <img title="Bus Shelter low angle" src="assets/img/Bus Shelter 2018/model1.JPG" alt="Bus Shelter project model low angle shot">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="shoe">
-                        <img class="main_img" title="Caterpillar Shoe" src="assets/img/Shoe 2021 - Caterpillar/main.png" alt="Caterpillar Shoe Project">
+                        <div class="galleryItem">
+                            <img class="main_img" title="Caterpillar Shoe" src="assets/img/Shoe 2021 - Caterpillar/main.png" alt="Caterpillar Shoe render" id="shoeOpenModal">
+                            <div class="overlay">
+                                <h3>Shoe - Caterpillar</h3>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="shoeModal">
+                            <div class="modalContent">
+                                <div>
+                                    <span class="closeModal" id="shoeCloseModal">&times;</span>
+                                </div>
+                                    
+                                <div class="modalColumn">
+                                    <h3>Shoe - Caterpillar</h3>
+                                    <h4>2021</h4>
+                                    <p>A concept for a Caterpillar running shoe with the added ruggedness, durability, and reliability of Caterpillar products.</p>
+                                </div>
+
+                                <div class="modalColumn">
+                                    <img title="Bus Shelter low angle" src="assets/img/Bus Shelter 2018/model1.JPG" alt="Bus Shelter project model low angle shot">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="superjacent">
-                        <img class="main_img" title="Superjacent" src="assets/img/Superjacent 2021 - Group Project/main.png" alt="Superjacent Group Project">
+                        <div class="galleryItem">
+                            <img class="main_img" title="Superjacent" src="assets/img/Superjacent 2021 - Group Project/main.png" alt="Superjacent render in situ" id="superjacentOpenModal">
+                            <div class="overlay">
+                                <h3>Superjacent</h3>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="superjacentModal">
+                            <div class="modalContent">
+                                <div>
+                                    <span class="closeModal" id="superjacentCloseModal">&times;</span>
+                                </div>
+                                    
+                                <div class="modalColumn">
+                                    <h3>Superjacent (Group Project)</h3>
+                                    <h4>2021</h4>
+                                    <p>A project aimed at increasing the appeal of a pre-existing bench design through additive manufacturing with recycled plastics. My team aimed to increase the appeal of the bench by increasing its functionality with bench extension and table modules.</p>
+                                </div>
+
+                                <div class="modalColumn">
+                                    <img title="Bus Shelter low angle" src="assets/img/Bus Shelter 2018/model1.JPG" alt="Bus Shelter project model low angle shot">
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div id="newPower">
-                        <img class="main_img" title="New Power" src="assets/img/New Power 2021/main.jpg" alt="New Power Poster and Brochure Project">
+                        <div class="galleryItem">
+                            <img class="main_img" title="New Power" src="assets/img/New Power 2021/main.jpg" alt="New Power brochure cover" id="newPowerOpenModal">
+                            <div class="overlay">
+                                <h3>New Power</h3>
+                            </div>
+                        </div>
+
+                        <div class="modal" id="newPowerModal">
+                            <div class="modalContent">
+                                <div>
+                                    <span class="closeModal" id="newPowerCloseModal">&times;</span>
+                                </div>
+                                    
+                                <div class="modalColumn">
+                                    <h3>New Power</h3>
+                                    <h4>2021</h4>
+                                    <p>Informative poster & brochure designs for educating about the value of renewable energy sources in Australia.</p>
+                                </div>
+
+                                <div class="modalColumn">
+                                    <img title="New Power Brochure Page 1" src="assets/img/New Power 2021/u3216775_JackBarker_Brochure_Page_1.jpg" alt="New Power Brochure Page 1">
+                                </div>
+                                <div class="modalColumn modalColumnDouble">
+                                    <img title="New Power Brochure Pages 2 & 3" src="assets/img/New Power 2021/u3216775_JackBarker_Brochure_Page_2.jpg" alt="New Power Brochure Pages 2 & 3">
+                                </div>
+                                <div class="modalColumn modalColumnDouble">
+                                    <img title="New Power Brochure Pages 4 & 5" src="assets/img/New Power 2021/u3216775_JackBarker_Brochure_Page_3.jpg" alt="New Power Brochure Pages 4 & 5">
+                                </div>
+                                <div class="modalColumn modalColumnDouble">
+                                    <img title="New Power Brochure Pages 6 & 7" src="assets/img/New Power 2021/u3216775_JackBarker_Brochure_Page_4.jpg" alt="New Power Brochure Pages 6 & 7">
+                                </div>
+                                <div class="modalColumn modalColumnDouble">
+                                    <img title="New Power Brochure Pages 8 & 9" src="assets/img/New Power 2021/u3216775_JackBarker_Brochure_Page_5.jpg" alt="New Power Brochure Pages 8 & 9">
+                                </div>
+                                <div class="modalColumn">
+                                    <img title="New Power Brochure Page 10" src="assets/img/New Power 2021/u3216775_JackBarker_Brochure_Page_6.jpg" alt="New Power Brochure Page 10">
+                                </div>
+                                <div class="modalColumn">
+                                    <img title="New Power Poster" src="assets/img/New Power 2021/Poster.png" alt="New Power Poster">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
-
-        <footer>
-
-        </footer>
     </body>
 
 </html>
