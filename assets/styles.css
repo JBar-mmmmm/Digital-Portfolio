@@ -152,7 +152,8 @@ header h2 {
 .modalContent h4 {
     padding-bottom: 1vw;
 }
-.modalColumn img {
+.modalColumn img,
+.modalColumn video {
     width: 100%;
 }
 /* based on https://www.w3schools.com/howto/howto_css_two_columns.asp */
