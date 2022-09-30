@@ -156,6 +156,9 @@ header h2 {
 .modalColumn video {
     width: 100%;
 }
+#customModalColumnHeightOne {
+    padding-bottom: 3.5%;
+}
 /* based on https://www.w3schools.com/howto/howto_css_two_columns.asp */
 .modalColumn {
     float: left;
@@ -175,5 +178,8 @@ header h2 {
     .modalColumn {
         width: 100%;
         padding-bottom: 5vw;
+    }
+    #customModalColumnHeightOne {
+        padding-bottom: 2%;
     }
 }
